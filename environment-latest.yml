@@ -1,0 +1,58 @@
+name: nnunet-dev
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version (3.12 - latest stable)
+  - python=3.12
+  
+  # PyTorch with CUDA support (Latest versions - let conda resolve)
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.4
+  
+  # Core scientific computing (let conda pick compatible versions)
+  - numpy
+  - scipy
+  - pandas
+  
+  # Machine learning & data processing
+  - scikit-learn
+  - scikit-image
+  
+  # Medical imaging libraries
+  - SimpleITK
+  - nibabel
+  
+  # Data augmentation
+  - batchgenerators
+  
+  # Utilities
+  - tqdm
+  - matplotlib
+  - seaborn
+  
+  # Development tools
+  - pip
+  - git
+  - jupyter
+  - ipython
+  
+  # Additional useful packages
+  - pyyaml
+  - requests
+  
+  # Pip dependencies
+  - pip:
+    - acvl-utils>=0.2
+    - dynamic-network-architectures>=0.2
+    - graphviz
+    - yacs
+    - dicom2nifti
+    - connected-components-3d
+    - einops
+
